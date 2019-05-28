@@ -1,0 +1,41 @@
+<ion-content>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title text-center>Iniciar Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<br><br>
+<img class="icone" src="assets/icon/camion.jpg" alt="">
+
+<ion-content  padding>
+  <form [formGroup]="fGroup">
+<ion-item>
+ <ion-label  position="floating"> Correo electrónico </ion-label>
+  <br>
+ <ion-input placeholder="example@gmail.com" formControlName="email" type="email" [(ngModel)]="email" name="email"></ion-input>
+</ion-item>
+<br>
+<ion-item>
+  <ion-label position="floating"> Contraseña </ion-label>
+  <br>
+  <ion-input formControlName="pass" type="password" [(ngModel)]="pass" name="pass"></ion-input>
+</ion-item>
+<br>
+
+<ion-button 
+class="centrado"
+[disabled]="!fGroup.valid"
+ (click)="OnSubmitLogin()" expanded="block">
+  Entrar
+</ion-button>
+<br> 
+<p text-center>¿¡Necesitas una cuenta!? Registrate</p>
+
+<ion-button 
+class="btn"
+routerLink='/registro'>
+<ion-icon  name="log-in"></ion-icon>
+</ion-button>
+</form>
+</ion-content>

@@ -1,0 +1,27 @@
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.regis{
+    display: block;
+    text-align: center;
+}
+
+.back{
+        position: relative;
+        
+        top: 4px;
+        right: -115px;
+        display: block;
+        width: 30%;
+        height: 6%;
+
+-webkit-transform: rotate(-180deg);
+ -moz-transform: rotate(-180deg);
+ -ms-transform: rotate(-180deg);
+ transform: rotate(-180deg);
+}
+
